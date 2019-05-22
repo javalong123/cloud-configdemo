@@ -1,22 +1,20 @@
-# ·şÎñ¶Ë¿ÚºÅ
+# æœåŠ¡ç«¯å£å·
 server:
   port: 8001
-
 spring:
   datasource:
-    # Êı¾İ¿â jdbc Á¬½ÓURL µØÖ·
+    # æ•°æ®åº“ jdbc è¿æ¥URL åœ°å€
     url: jdbc:mysql://localhost:3306/springboot-001?serverTimezone=GMT%2B8
     username: root
     password: root
-    # Ö¸¶¨Êı¾İ¿âÇı¶¯
+    # æŒ‡å®šæ•°æ®åº“é©±åŠ¨
     driver-class-name: com.mysql.cj.jdbc.Driver
-
   jpa:
-    # µÚÒ»´Î¼ÓÔØJPAÊ±¸ù¾İmodel×Ô¶¯½¨Á¢±í -- Ç°Ìá ÏÈÓĞ¿â
-    # ÒÔºó¼ÓÔØ JPA ¸ù¾İmodel Àà×Ô¶¯¸üĞÂ±í½á¹¹ ±í½á¹¹¸Ä±ä µ«±íÖĞµÄĞĞÒÀ¾É´æÔÚ ²»»áÉ¾³ıÒÔÇ°µÄĞĞ
+    # ç¬¬ä¸€æ¬¡åŠ è½½JPAæ—¶æ ¹æ®modelè‡ªåŠ¨å»ºç«‹è¡¨ -- å‰æ å…ˆæœ‰åº“
+    # ä»¥ååŠ è½½ JPA æ ¹æ®model ç±»è‡ªåŠ¨æ›´æ–°è¡¨ç»“æ„ è¡¨ç»“æ„æ”¹å˜ ä½†è¡¨ä¸­çš„è¡Œä¾æ—§å­˜åœ¨ ä¸ä¼šåˆ é™¤ä»¥å‰çš„è¡Œ
     hibernate:
       ddl-auto: update
-    # ÏÔÊ¾SQLÓï¾ä
+    # æ˜¾ç¤ºSQLè¯­å¥
     show-sql: true
   application:
     name: UserProviderTest

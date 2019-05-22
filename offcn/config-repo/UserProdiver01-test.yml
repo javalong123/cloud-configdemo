@@ -17,7 +17,7 @@ spring:
     # 显示SQL语句
     show-sql: true
   application:
-    name: UserProviderTest
+    name: UserProvider
 eureka:
   client:
     service-url:

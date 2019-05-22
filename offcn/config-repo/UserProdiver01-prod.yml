@@ -1,0 +1,26 @@
+# 服务端口号
+server:
+  port: 8001
+
+spring:
+  datasource:
+    # 数据库 jdbc 连接URL 地址
+    url: jdbc:mysql://localhost:3306/springboot-001?serverTimezone=GMT%2B8
+    username: root
+    password: root
+    # 指定数据库驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    # 第一次加载JPA时根据model自动建立表 -- 前提 先有库
+    # 以后加载 JPA 根据model 类自动更新表结构 表结构改变 但表中的行依旧存在 不会删除以前的行
+    hibernate:
+      ddl-auto: update
+    # 显示SQL语句
+    show-sql: true
+  application:
+    name: UserProviderProd
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka,http://localhost:10087/eureka
